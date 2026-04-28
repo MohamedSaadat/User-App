@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <a href="" class="logo">Logo</a>
@@ -15,6 +17,36 @@
             <a href="">About us</a>
         </nav>
     </header>
+    <div class="user-form-container">
+        <h1>Add User</h1>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name ..." required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email ..." required>
+
+            <button class="create-user" id="submit">Create</button>
+        </form>
+    </div>
+    <div class="all-users">
+        <h2>All Users</h2>
+        <table id="users">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>mohamed</td>
+                <td>mohamed.com</td>
+                <td>
+                    <span class="edit">Edit</span>
+                    <span class="delete">delete</span>
+                </td>
+            </tr>
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
